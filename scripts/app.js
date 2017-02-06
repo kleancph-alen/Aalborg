@@ -8,7 +8,37 @@ $(document).ready(function () {
 
     var mainHeight = (5 * $(".main").width()) / 8;
     $(".main-header").css('height', mainHeight + 'px');
+
+    $(".search-tab").css('width', $(".navbar").width() + 'px');
+
+    $(".nav-item").click(function (){
+        $(".nav-item").removeClass("selected");
+        $(this).addClass("selected");
+
+        $(".nav-item").addClass("light-left-border");
+        $(".nav-item").removeClass("dark-left-border");
+
+        $(this).removeClass("light-left-border");
+        $(this).next().removeClass("light-left-border");
+        $(this).addClass("dark-left-border");
+        $(this).next().addClass("dark-left-border");
+    });
+
+    $(".search-tab input").keyup(function () {
+        if ($(this).val() != "") {
+            $(this).siblings("img").show();
+        }
+        else {
+            $(this).siblings("img").hide();
+        }
+    });
+
+    $(".search-tab img").click(function () {
+        $(this).parent().find("input").val("");
+        $(this).hide();
+    });
 });
+
 
 $(window).scroll(function (event) {
     didScroll = true;

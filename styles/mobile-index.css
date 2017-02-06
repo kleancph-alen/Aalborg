@@ -1,0 +1,42 @@
+@media screen and (max-width: 1023px){
+    header{
+        width: 100%;
+    }
+
+    .main{
+        width: 100%;
+    }
+}
+
+/* Large Screen */
+@media screen and (min-width: 1040px){
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1040px) {
+
+}
+
+@media screen and (min-width: 801px){
+
+}
+
+/* Tablet */
+@media screen and (min-width: 461px) and (max-width: 800px){
+
+}
+
+/* Phone */
+@media screen and (max-width: 460px) {
+
+}
+
+/* Mobile M */
+@media screen and (min-width: 321px) and (max-width: 376px) {
+    
+}
+
+/* Mobile S */
+@media screen and (max-width: 321px) {
+    
+}
