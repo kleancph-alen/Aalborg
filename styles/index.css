@@ -107,6 +107,94 @@ header{
     text-align: center;
 }
 
+.offer{
+    padding: 30px;
+}
+
+.offer > .row{
+    margin-top: 30px;
+}
+
+.card{
+    border: thin solid #7CABA9;
+    box-shadow: 0 0px 1px #7CABA9, 0 1px 1px #7CABA9;
+    margin: 0px 5px;
+    border-radius: 2px;
+    padding: 0px;
+}
+
+.card-main-img{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.content{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.select-btn{
+    float: right;
+    cursor: pointer;
+}
+
+.content-text{
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.action{
+    text-align: center;
+    padding: 20px 0px;  
+}
+
+.action a{
+    color: #7CABA9;
+    font-weight: 500;
+}
+
+.team{
+    background: #254064;
+    padding: 20px;
+}
+
+.team .video{
+    background-image: url('../img/video-tumb.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .video img{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.team .text{
+    color: white;
+    text-align: center;
+    padding: 40px 50px;
+}
+
+.team .text img{
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    width: 150px;
+    bottom: -150px;
+    right: 10px;
+}
+
 .contact-us-btn{
     background: #7CABA9;
     padding: 20px 40px;

@@ -37,6 +37,10 @@ $(document).ready(function () {
         $(this).parent().find("input").val("");
         $(this).hide();
     });
+
+    $(".card-main-img").css('height', ($(".card-main-img").width() * 0.7) + 'px');
+
+    $(".team .video").css('height', ($(".team").width() * 0.33) + 'px');
 });
 
 
