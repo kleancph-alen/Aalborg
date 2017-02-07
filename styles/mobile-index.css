@@ -1,9 +1,5 @@
 @media screen and (max-width: 1023px){
-    header{
-        width: 100%;
-    }
-
-    .main{
+    header, .main, footer{
         width: 100%;
     }
 }
@@ -14,7 +10,10 @@
 }
 
 @media screen and (min-width: 801px) and (max-width: 1040px) {
-
+    .map-tooltip{
+        right: 59.5%;
+        bottom: 91px;
+    }
 }
 
 @media screen and (min-width: 801px){

@@ -41,7 +41,16 @@ $(document).ready(function () {
     $(".card-main-img").css('height', ($(".card-main-img").width() * 0.7) + 'px');
 
     $(".team .video").css('height', ($(".team").width() * 0.33) + 'px');
+
+    $(".map-tooltip").click(function (){
+        window.open('https://www.google.dk/maps/place/Fredrikstadvej+10,+9200+Aalborg+SV,+Denmark/@57.0210166,9.8949402,17z/data=!3m1!4b1!4m5!3m4!1s0x464933aa1f15bc8f:0x23258c6d4263c130!8m2!3d57.0210166!4d9.8971289?hl=en')
+    });
 });
+
+function goTo(id){
+    $(".tab").hide();
+    $("#" + id).show();
+}
 
 
 $(window).scroll(function (event) {

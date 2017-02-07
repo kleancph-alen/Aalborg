@@ -7,6 +7,7 @@
 
     <!-- CSS -->
     <link href="styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/font-awesome.min.css" rel="stylesheet" />
     <link href="styles/index.css" rel="stylesheet" />
     <link href="styles/mobile-index.css" rel="stylesheet" />
     <!-- End CSS -->
@@ -20,7 +21,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo_white.png" />
+            <img src="img/logo_white.png" onclick="goTo(0)" />
         </div>
         <div class="navbar">
             <div class="nav-item light-left-border">
@@ -41,7 +42,7 @@
             </div>
         </div>
     </header>
-    <div class="main">
+    <div class="main tab" id="0">
         <div class="main-header col-xs-12">
             <div>
                 <h2>Omsorg, naervaer og ekspertise til dig og dit kaeledyr</h1>
@@ -196,7 +197,54 @@
         </section>
     </div>
     <footer>
-
-    </footer>
+        <div class="footer-map col-xs-12">
+            <div class="pin" id="pin1">
+                <img src="img/blue_pin.svg"/>
+                <span>Telenor</span>
+            </div>
+            <div class="pin" id="pin2">
+                <img src="img/blue_pin.svg"/>
+                <span>Spangsberg Chokolade</span>
+            </div>
+            <div class="map-tooltip">
+                <img src="img/logo_white.png" width="70%" />
+                <div class="pin-location col-xs-12">
+                    <img src="img/dark_pin.svg" />
+                    <span>FREDRUJSTADVEJ 10 92 AALBORG, SV</span>
+                </div>
+                <div class="pin-phone col-xs-12">
+                    <img src="img/dark_pin.svg" />
+                    <span>981 8199</span>
+                    <div class="triangle"></div>
+                </div>
+            </div>  
+            
+            
+            <img src="img/map.png" width="100%" />
+        </div>     
+        <div class="footer-content col-xs-12">
+            <div class="col-xs-7">
+                <span>FOLG OS I VORES NYHEDSBREV:</span><br />
+                <div class="input col-xs-12">
+                    <input type="text" placeholder="Din email" />
+                    <button>Tilmeld</button>
+                </div>
+                <span>...ELLER PA</span>
+                <div class="social-icons col-xs-12">
+                    <img src="img/fb_icon.png" />
+                    <img src="img/vimeo_icon.png" />
+                    <img src="img/youtube_icon.png" />
+                    <img src="img/google_icon.png" />                  
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <h4>Dyrlaegehjaelp og tidsberstilling:</h3>
+                <div class="phone col-xs-12">
+                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    <span>9818 1911</span>
+                </div>               
+            </div>
+        </div> 
+    </footer>                            
 </body>
 </html>

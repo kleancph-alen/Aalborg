@@ -1,6 +1,7 @@
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
@@ -20,6 +21,7 @@ header{
 
 .logo img{
     height: 50px;
+    cursor: pointer;
 }
 
 .navbar{
@@ -208,5 +210,167 @@ header{
 }
 
 footer{
-    height: 2000px;
+    width: 1024px;
+}
+
+.footer-map{
+    position: relative;
+}
+
+.pin{
+    position: absolute;
+    cursor: pointer;    
+}
+
+.pin img{
+    width: 20px;
+}
+
+.pin span{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #254064;
+}
+
+#pin1{
+    left: 42%;
+    top: 16.5%;
+}
+
+#pin2{
+    left: 37.8%;
+    top: 56.8%;
+}
+
+.map-tooltip{
+    background: #6997C7;
+    opacity: 0.85;
+    position: absolute;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 0 2px 7px #888888;
+    right: 59.4%;
+    bottom: 92px;
+    cursor: pointer;
+}
+
+.map-tooltip > img{
+    width: 70%;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.pin-location{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    border-bottom: solid thin white;
+    padding-bottom: 4px;
+}
+
+.pin-location img{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.pin-location span{
+    color: white;
+    font-size: 12px;
+}
+
+.pin-phone{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.pin-phone img{
+    width: 20px;
+    margin-right: 15px;
+}
+
+.pin-phone span{
+    color: #254064;
+    font-weight: 600;
+}
+
+.triangle{
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid #6997C7;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -39px;
+}
+
+.footer-content{
+    background: #6997C7;
+    margin-top: 10px;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content h4{
+    text-transform: uppercase;
+}
+
+.footer-content .input{
+    padding: 5px 0px;
+    margin-bottom: 5px;
+}
+
+.footer-content .input input{
+    padding: 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: none;
+    float: left;
+    color: black;
+    width: 42%;
+}
+
+.footer-content .input button{
+    padding: 10px 20px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    float: left;
+    color: white;
+    background: #254064;
+    text-transform: uppercase;
+}
+
+.social-icons{
+    padding: 5px 0px;
+}
+
+.social-icons img{
+    width: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer-content .phone{
+    padding: 5px 0px;
+    color: #254064;
+}
+
+.footer-content .phone i{
+    margin-right: 5px;
+}
+
+.footer-content .phone span{
+    font-weight: 600;
+    font-size: 18px;
 }
