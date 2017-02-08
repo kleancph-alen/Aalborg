@@ -1,5 +1,5 @@
 @media screen and (max-width: 1023px){
-    header, .main, footer{
+    header, .tab, footer{
         width: 100%;
     }
 }

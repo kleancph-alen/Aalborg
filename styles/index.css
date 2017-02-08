@@ -2,6 +2,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Nunito' !important;   
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 header{
@@ -62,6 +68,11 @@ header{
     background: #254064;
 }
 
+.tab{
+    width: 1024px;
+    display: none;
+}
+
 .nav-item.search.selected .search-tab{
     display: flex;
 }
@@ -92,10 +103,6 @@ header{
     top: 30px;
     height: 20px;
     cursor: pointer;
-}
-
-.main{
-    width: 1024px;
 }
 
 .main-header{
@@ -189,8 +196,6 @@ header{
 }
 
 .team .text img{
-    background: white;
-    border-radius: 100%;
     position: absolute;
     width: 150px;
     bottom: -150px;
@@ -207,6 +212,7 @@ header{
     font-weight: bold;
     margin: 10px 0px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 footer{
@@ -288,9 +294,9 @@ footer{
     align-items: center;
 }
 
-.pin-phone img{
-    width: 20px;
+.pin-phone i{
     margin-right: 15px;
+    color: #254064;
 }
 
 .pin-phone span{
@@ -319,6 +325,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-image: url('../img/paws.png');
 }
 
 .footer-content h4{
@@ -364,13 +371,94 @@ footer{
 .footer-content .phone{
     padding: 5px 0px;
     color: #254064;
+    display: flex;
 }
 
 .footer-content .phone i{
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .footer-content .phone span{
     font-weight: 600;
     font-size: 18px;
 }
+
+/* Start Meet us */
+
+.meet-us{
+    margin: 80px 0px;
+    padding: 5px;
+}
+
+.tab-header{
+    background-image: url('../img/meet-us-background.jpg');
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center; 
+    padding: 0px;
+}
+
+.meet-us-header{
+    
+}
+
+.meet-us-header h3{
+    z-index: 10;
+    position: absolute;
+    margin: 0px;
+}
+
+.tab-header-opacity{
+    background: #6997C7;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
+
+.meet-us-main{
+    margin: 30px 0px;
+}
+
+.meet-us-row{
+    padding: 0px;
+    box-shadow: 0 0px 1px #CED7E1, 0 1px 1px #CED7E1;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.meet-us-row-img{
+    padding: 0px;
+}
+
+.meet-us-row-text{
+    padding: 30px;
+}
+
+/* End Meet us */
+
+.we-offer{
+    margin: 80px 0px;
+    padding: 5px;
+}
+
+.we-offer-header-content{
+    z-index: 10;
+    position: absolute;
+}
+
+.we-offer-header-content .contact-us-btn{
+    opacity: 1;
+    margin: 5px;
+}
+
+.we-offer-header .tab-header-opacity{
+    position: absolute;
+}
+
+
+/* We Offer */
